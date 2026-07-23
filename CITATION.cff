@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this dataset or its charts, please cite it as below and link icoffeeapp.com."
+title: "Coffee Brewing Data: brewing parameters from the iCoffee house recipes"
+type: dataset
+authors:
+  - name: "iCoffee"
+    website: "https://icoffeeapp.com"
+url: "https://icoffeeapp.com/en/learn/coffee-statistics"
+repository-code: "https://github.com/neeeeeeessa/coffee-brewing-data"
+date-released: 2026-07-23

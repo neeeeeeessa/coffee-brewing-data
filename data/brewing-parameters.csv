@@ -1,0 +1,10 @@
+canonical_id,method_en,ratio,water_parts,water_temp_c,coffee_dose_g,brew_water_ml
+espresso-icoffee,Espresso,1:2,2,93,18,36
+cold-brew-icoffee,Cold Brew,1:5,5,20,200,1000
+moka-icoffee,Moka Pot,1:10,10,100,18,160
+aeropress-inverted-icoffee,AeroPress (Inverted),1:11,11,100,18,200
+aeropress-standard-icoffee,AeroPress,1:15,15,85,15,225
+french-press-icoffee,French Press,1:15,15,94,30,450
+siphon-vacuum-icoffee,Siphon,1:15,15,92,17,255
+japanese-iced-coffee-icoffee,Japanese Iced Coffee,1:16,16,96,30,300
+v60-icoffee,V60,1:16,16,96,18,288

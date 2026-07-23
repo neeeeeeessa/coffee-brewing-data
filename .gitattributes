@@ -1,0 +1,7 @@
+# Exported files are written with LF by icoffee-website's export:backlink-repo
+# script; pin LF so re-exports stay byte-stable on Windows checkouts.
+*.md   text eol=lf
+*.csv  text eol=lf
+*.json text eol=lf
+*.cff  text eol=lf
+*.png  binary

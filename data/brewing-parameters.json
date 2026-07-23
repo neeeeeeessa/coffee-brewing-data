@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-07-23T18:40:01.710Z",
+  "source_hash": "08e16418d203acca96d19e33bf431c432d8607c95e2f530766f05e1379876733",
+  "recipe_count": 9,
+  "recipes": [
+    {
+      "canonical_id": "espresso-icoffee",
+      "method_en": "Espresso",
+      "ratio": "1:2",
+      "water_parts": 2,
+      "water_temp_c": 93,
+      "coffee_dose_g": 18,
+      "brew_water_ml": 36
+    },
+    {
+      "canonical_id": "cold-brew-icoffee",
+      "method_en": "Cold Brew",
+      "ratio": "1:5",
+      "water_parts": 5,
+      "water_temp_c": 20,
+      "coffee_dose_g": 200,
+      "brew_water_ml": 1000
+    },
+    {
+      "canonical_id": "moka-icoffee",
+      "method_en": "Moka Pot",
+      "ratio": "1:10",
+      "water_parts": 10,
+      "water_temp_c": 100,
+      "coffee_dose_g": 18,
+      "brew_water_ml": 160
+    },
+    {
+      "canonical_id": "aeropress-inverted-icoffee",
+      "method_en": "AeroPress (Inverted)",
+      "ratio": "1:11",
+      "water_parts": 11,
+      "water_temp_c": 100,
+      "coffee_dose_g": 18,
+      "brew_water_ml": 200
+    },
+    {
+      "canonical_id": "aeropress-standard-icoffee",
+      "method_en": "AeroPress",
+      "ratio": "1:15",
+      "water_parts": 15,
+      "water_temp_c": 85,
+      "coffee_dose_g": 15,
+      "brew_water_ml": 225
+    },
+    {
+      "canonical_id": "french-press-icoffee",
+      "method_en": "French Press",
+      "ratio": "1:15",
+      "water_parts": 15,
+      "water_temp_c": 94,
+      "coffee_dose_g": 30,
+      "brew_water_ml": 450
+    },
+    {
+      "canonical_id": "siphon-vacuum-icoffee",
+      "method_en": "Siphon",
+      "ratio": "1:15",
+      "water_parts": 15,
+      "water_temp_c": 92,
+      "coffee_dose_g": 17,
+      "brew_water_ml": 255
+    },
+    {
+      "canonical_id": "japanese-iced-coffee-icoffee",
+      "method_en": "Japanese Iced Coffee",
+      "ratio": "1:16",
+      "water_parts": 16,
+      "water_temp_c": 96,
+      "coffee_dose_g": 30,
+      "brew_water_ml": 300
+    },
+    {
+      "canonical_id": "v60-icoffee",
+      "method_en": "V60",
+      "ratio": "1:16",
+      "water_parts": 16,
+      "water_temp_c": 96,
+      "coffee_dose_g": 18,
+      "brew_water_ml": 288
+    }
+  ]
+}
