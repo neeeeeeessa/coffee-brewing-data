@@ -6,7 +6,7 @@ This repository contains two kinds of material, licensed differently.
 
 All images in this repository are iCoffee-created data graphics. They are
 governed by the **iCoffee Image License**, whose canonical, current text lives
-at **<https://icoffeeapp.com/en/legal/license>**. In summary (the canonical page
+at **<https://icoffeeapp.com/en/license>**. In summary (the canonical page
 controls if they differ):
 
 You may use, copy, and redistribute these images free of charge, including for
@@ -41,9 +41,14 @@ This license ends automatically if you break these terms.
 ## Data (`data/`, `SOURCE.md`)
 
 The data files describe the brewing parameters of iCoffee's published house
-recipes. You may use, copy, quote, and redistribute this data freely, including
-in commercial work and in automated or AI-assisted systems, provided you credit
-iCoffee as the source with a link to
+recipes. They are licensed under the
+[Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+You may copy, redistribute, and adapt the data for any purpose, including
+commercially and in automated or AI-assisted systems, provided you give
+appropriate credit to iCoffee with a link to
 [icoffeeapp.com](https://icoffeeapp.com) (or the statistics page,
 <https://icoffeeapp.com/en/learn/coffee-statistics>) where the medium allows
-it. Do not misrepresent the data or present it as your own measurement work.
+it, and indicate if you changed the data.
+
+We also ask, as a request rather than a license condition: do not misrepresent
+the data or present it as your own measurement work.
