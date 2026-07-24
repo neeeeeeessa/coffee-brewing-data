@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://neeeeeeessa.github.io/coffee-brewing-data/sitemap.xml
