@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee Brewing Data - brewing parameters from iCoffee house recipes</title>
+  <meta name="description" content="Brewing parameters and data graphics from the published iCoffee house recipes: coffee-to-water ratio, water temperature, dose, and brew water for every brewing method we publish.">
+  <link rel="canonical" href="https://neeeeeeessa.github.io/coffee-brewing-data/">
+  <meta property="og:title" content="Coffee Brewing Data - brewing parameters from iCoffee house recipes">
+  <meta property="og:description" content="Brewing parameters and data graphics from the published iCoffee house recipes: coffee-to-water ratio, water temperature, dose, and brew water for every brewing method we publish.">
+  <meta property="og:image" content="https://neeeeeeessa.github.io/coffee-brewing-data/charts/coffee-statistics-cover-en.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Coffee Brewing Data",
+    "description": "Brewing parameters and data graphics from the published iCoffee house recipes: coffee-to-water ratio, water temperature, dose, and brew water for every brewing method we publish, as machine-readable data files and charts in five languages.",
+    "url": "https://neeeeeeessa.github.io/coffee-brewing-data/",
+    "sameAs": "https://icoffeeapp.com/en/learn/coffee-statistics",
+    "creator": {
+      "@type": "Organization",
+      "name": "iCoffee",
+      "url": "https://icoffeeapp.com"
+    },
+    "license": "https://github.com/neeeeeeessa/coffee-brewing-data/blob/main/LICENSE.md",
+    "datePublished": "2026-07-23",
+    "keywords": ["coffee", "brewing", "espresso", "pour-over", "AeroPress", "French press", "cold brew"],
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://neeeeeeessa.github.io/coffee-brewing-data/data/brewing-parameters.csv",
+        "encodingFormat": "text/csv"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://neeeeeeessa.github.io/coffee-brewing-data/data/brewing-parameters.json",
+        "encodingFormat": "application/json"
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #1a1a1a;
+      --muted: #555;
+      --border: #ccc;
+      --bg: #fff;
+      --link: #0645ad;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 2rem 1rem 3rem;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+    main {
+      max-width: 72ch;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.25;
+      margin: 0 0 1rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin: 2.5rem 0 0.75rem;
+      line-height: 1.3;
+    }
+    p { margin: 0 0 1rem; }
+    a { color: var(--link); }
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1rem 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      white-space: nowrap;
+    }
+    th { background: #f5f5f5; font-weight: 600; }
+    figure {
+      margin: 1.5rem 0;
+    }
+    figure img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .locale-links {
+      font-size: 0.9rem;
+      margin: 0 0 1.5rem;
+    }
+    .downloads { list-style: none; padding: 0; margin: 0; }
+    .downloads li { margin-bottom: 0.75rem; }
+    .citation {
+      font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
+      font-size: 0.85rem;
+      background: #f5f5f5;
+      border: 1px solid var(--border);
+      padding: 0.75rem 1rem;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    footer .credit {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+    }
+    #table-error { color: #8b0000; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Coffee Brewing Data</h1>
+    <p>
+      Brewing parameters and data graphics from the published
+      <a href="https://icoffeeapp.com">iCoffee</a> house recipes: coffee-to-water ratio, water
+      temperature, dose, and brew water for every brewing method we publish, as
+      machine-readable data files and charts in five languages. The methods covered
+      today: espresso, moka pot, V60, AeroPress (standard and inverted), French
+      press, siphon, cold brew, and Japanese iced coffee. The full write-up with context
+      and sources lives on the iCoffee coffee statistics page:
+      <a href="https://icoffeeapp.com/en/learn/coffee-statistics">icoffeeapp.com/en/learn/coffee-statistics</a>.
+    </p>
+
+    <h2>Brewing parameters at a glance</h2>
+    <p>The full dataset, from the current published recipes:</p>
+    <noscript>
+      <p>
+        See <a href="data/brewing-parameters.csv">data/brewing-parameters.csv</a>
+        for the full dataset. The same table appears in the repository README.
+      </p>
+    </noscript>
+    <div>
+      <div class="table-wrap">
+        <table id="brewing-table">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Ratio</th>
+              <th>Water temp (°C)</th>
+              <th>Coffee dose (g)</th>
+              <th>Brew water (ml)</th>
+            </tr>
+          </thead>
+          <tbody id="brewing-tbody"></tbody>
+        </table>
+      </div>
+      <p id="table-error" hidden></p>
+    </div>
+
+    <h2>Charts</h2>
+    <p>
+      Rendered from this dataset by the iCoffee data-graphics pipeline. Each chart
+      exists in all five languages (<code>-en</code>, <code>-es</code>, <code>-pt-BR</code>, <code>-zh-CN</code>, <code>-zh-TW</code>).
+    </p>
+
+    <h3>Coffee-to-water ratio by brewing method</h3>
+    <div>
+      <figure>
+        <img src="charts/brew-ratio-by-method-en.png"
+             alt="Coffee-to-water ratio by brewing method"
+             width="1200" height="640"
+             loading="lazy">
+        <figcaption>Coffee-to-water ratio by brewing method</figcaption>
+      </figure>
+    </div>
+    <p class="locale-links">
+      Localized versions of the ratio chart:
+      <a href="charts/brew-ratio-by-method-es.png">es</a> ·
+      <a href="charts/brew-ratio-by-method-pt-BR.png">pt-BR</a> ·
+      <a href="charts/brew-ratio-by-method-zh-CN.png">zh-CN</a> ·
+      <a href="charts/brew-ratio-by-method-zh-TW.png">zh-TW</a>.
+    </p>
+
+    <h3>Brew water temperature by brewing method</h3>
+    <div>
+      <figure>
+        <img src="charts/brew-temp-by-method-en.png"
+             alt="Brew water temperature by brewing method"
+             width="1200" height="640"
+             loading="lazy">
+        <figcaption>Brew water temperature by brewing method</figcaption>
+      </figure>
+    </div>
+    <p class="locale-links">
+      Localized versions of the temperature chart:
+      <a href="charts/brew-temp-by-method-es.png">es</a> ·
+      <a href="charts/brew-temp-by-method-pt-BR.png">pt-BR</a> ·
+      <a href="charts/brew-temp-by-method-zh-CN.png">zh-CN</a> ·
+      <a href="charts/brew-temp-by-method-zh-TW.png">zh-TW</a>.
+    </p>
+
+    <h2>Data files</h2>
+    <ul class="downloads">
+      <li>
+        <a href="data/brewing-parameters.csv">data/brewing-parameters.csv</a>:
+        one row per house recipe: <code>canonical_id</code>, <code>method_en</code>, <code>ratio</code>, <code>water_parts</code>, <code>water_temp_c</code>, <code>coffee_dose_g</code>, <code>brew_water_ml</code>
+      </li>
+      <li>
+        <a href="data/brewing-parameters.json">data/brewing-parameters.json</a>:
+        same dataset with export metadata (<code>generated_at</code>, <code>source_hash</code>, <code>recipe_count</code>)
+      </li>
+      <li>
+        <a href="data/method-labels.csv">data/method-labels.csv</a> /
+        <a href="data/method-labels.json">data/method-labels.json</a>:
+        localized brewing-method display names (English, Spanish, Brazilian Portuguese, Simplified and Traditional Chinese)
+      </li>
+    </ul>
+
+    <h2>How to cite</h2>
+    <p>
+      If you use this dataset or its charts, please cite it and link
+      <a href="https://icoffeeapp.com">icoffeeapp.com</a>.
+    </p>
+    <p>
+      <strong>Coffee Brewing Data: brewing parameters from the iCoffee house recipes</strong><br>
+      iCoffee, 2026<br>
+      <a href="https://neeeeeeessa.github.io/coffee-brewing-data/">https://neeeeeeessa.github.io/coffee-brewing-data/</a>
+    </p>
+    <p>Plain-text citation:</p>
+    <div class="citation" id="citation-text">iCoffee. (2026). Coffee Brewing Data: brewing parameters from the iCoffee house recipes. https://neeeeeeessa.github.io/coffee-brewing-data/</div>
+
+    <h2>License</h2>
+    <p>
+      You are welcome to embed the charts and cite the data, including in commercial
+      editorial work (articles, reviews, videos), with credit to iCoffee and a link
+      where the medium allows it. See
+      <a href="https://github.com/neeeeeeessa/coffee-brewing-data/blob/main/LICENSE.md">LICENSE.md</a>
+      for the exact terms.
+    </p>
+
+    <footer>
+      <h2>About iCoffee</h2>
+      <p>
+        <a href="https://icoffeeapp.com">iCoffee</a> is a free coffee app for iPhone and Android:
+        scan your beans, get personalized AI guidance, track every brew. Its published
+        house recipes are the source of the data in this repository.
+      </p>
+      <p>
+        Coffee statistics:
+        <a href="https://icoffeeapp.com/en/learn/coffee-statistics">English</a>,
+        <a href="https://icoffeeapp.com/es/aprende/estadisticas-del-cafe">Spanish</a>,
+        <a href="https://icoffeeapp.com/pt-BR/aprenda/estatisticas-do-cafe">Brazilian Portuguese</a>,
+        <a href="https://icoffeeapp.com/zh-CN/xuexi/kafei-tongji-shuju">Simplified Chinese</a>, and
+        <a href="https://icoffeeapp.com/zh-TW/xuexi/kafei-tongji-shuju">Traditional Chinese</a>.
+      </p>
+      <p>
+        Download:
+        <a href="https://apps.apple.com/us/app/icoffee-scan-brew-coffee/id6760366760">App Store</a>,
+        <a href="https://play.google.com/store/apps/details?id=com.icoffee.app">Google Play</a>.
+      </p>
+      <p class="credit">Data and charts by iCoffee (icoffeeapp.com).</p>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      function cell(value) {
+        var td = document.createElement('td');
+        if (value !== null && value !== undefined) {
+          td.textContent = value;
+        }
+        return td;
+      }
+
+      function showError() {
+        var el = document.getElementById('table-error');
+        el.hidden = false;
+        el.innerHTML = 'Could not load the brewing parameters table. See <a href="data/brewing-parameters.csv">data/brewing-parameters.csv</a> for the full dataset.';
+      }
+
+      fetch('data/brewing-parameters.json')
+        .then(function (response) {
+          if (!response.ok) throw new Error('fetch failed');
+          return response.json();
+        })
+        .then(function (data) {
+          var recipes = data.recipes.slice().sort(function (a, b) {
+            return a.water_parts - b.water_parts;
+          });
+          var tbody = document.getElementById('brewing-tbody');
+          recipes.forEach(function (row) {
+            var tr = document.createElement('tr');
+            tr.appendChild(cell(row.method_en));
+            tr.appendChild(cell(row.ratio));
+            tr.appendChild(cell(row.water_temp_c));
+            tr.appendChild(cell(row.coffee_dose_g));
+            tr.appendChild(cell(row.brew_water_ml));
+            tbody.appendChild(tr);
+          });
+        })
+        .catch(showError);
+    })();
+  </script>
+</body>
+</html>
