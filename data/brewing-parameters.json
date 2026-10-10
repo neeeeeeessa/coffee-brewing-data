@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-23T18:40:01.710Z",
-  "source_hash": "08e16418d203acca96d19e33bf431c432d8607c95e2f530766f05e1379876733",
-  "recipe_count": 9,
+  "generated_at": "2026-10-10T11:47:35.931Z",
+  "source_hash": "c09addaf70f134ca48dadf70326c189ce0a6c1aee8a5a458066b92d622ce5d09",
+  "recipe_count": 11,
   "recipes": [
     {
       "canonical_id": "espresso-icoffee",
@@ -67,6 +67,15 @@
       "brew_water_ml": 255
     },
     {
+      "canonical_id": "auto-drip-icoffee",
+      "method_en": "Auto Drip",
+      "ratio": "1:16",
+      "water_parts": 16,
+      "water_temp_c": 92,
+      "coffee_dose_g": 60,
+      "brew_water_ml": 960
+    },
+    {
       "canonical_id": "japanese-iced-coffee-icoffee",
       "method_en": "Japanese Iced Coffee",
       "ratio": "1:16",
@@ -83,6 +92,15 @@
       "water_temp_c": 96,
       "coffee_dose_g": 18,
       "brew_water_ml": 288
+    },
+    {
+      "canonical_id": "chemex-icoffee",
+      "method_en": "Chemex",
+      "ratio": "1:17",
+      "water_parts": 17,
+      "water_temp_c": 93,
+      "coffee_dose_g": 30,
+      "brew_water_ml": 510
     }
   ]
 }

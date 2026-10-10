@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-23T18:40:01.710Z",
-  "source_hash": "08e16418d203acca96d19e33bf431c432d8607c95e2f530766f05e1379876733",
-  "recipe_count": 9,
+  "generated_at": "2026-10-10T11:47:35.931Z",
+  "source_hash": "c09addaf70f134ca48dadf70326c189ce0a6c1aee8a5a458066b92d622ce5d09",
+  "recipe_count": 11,
   "recipes": [
     {
       "canonical_id": "espresso-icoffee",
@@ -60,6 +60,14 @@
       "method_zh_tw": "虹吸壺"
     },
     {
+      "canonical_id": "auto-drip-icoffee",
+      "method_en": "Auto Drip",
+      "method_es": "Cafetera de Goteo",
+      "method_pt_br": "Cafeteira de Gotejamento",
+      "method_zh_cn": "自动滴滤咖啡机",
+      "method_zh_tw": "自動滴濾咖啡機"
+    },
+    {
       "canonical_id": "japanese-iced-coffee-icoffee",
       "method_en": "Japanese Iced Coffee",
       "method_es": "Café Helado Japonés",
@@ -74,6 +82,14 @@
       "method_pt_br": "V60",
       "method_zh_cn": "V60",
       "method_zh_tw": "V60"
+    },
+    {
+      "canonical_id": "chemex-icoffee",
+      "method_en": "Chemex",
+      "method_es": "Chemex",
+      "method_pt_br": "Chemex",
+      "method_zh_cn": "Chemex",
+      "method_zh_tw": "Chemex"
     }
   ]
 }
