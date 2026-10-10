@@ -5,7 +5,7 @@ Brewing parameters and data graphics from the published
 temperature, dose, and brew water for every brewing method we publish, as
 machine-readable data files and charts in five languages. The methods covered
 today: espresso, moka pot, V60, AeroPress (standard and inverted), French
-press, siphon, cold brew, and Japanese iced coffee.
+press, siphon, cold brew, Japanese iced coffee, Auto Drip, and Chemex.
 
 All values are the parameters we actually publish and maintain in our recipes,
 not aggregated third-party figures. The full write-up with context and sources
@@ -38,8 +38,10 @@ The full dataset, from the current published recipes:
 | AeroPress | 1:15 | 85 | 15 | 225 |
 | French Press | 1:15 | 94 | 30 | 450 |
 | Siphon | 1:15 | 92 | 17 | 255 |
+| Auto Drip | 1:16 | 92 | 60 | 960 |
 | Japanese Iced Coffee | 1:16 | 96 | 30 | 300 |
 | V60 | 1:16 | 96 | 18 | 288 |
+| Chemex | 1:17 | 93 | 30 | 510 |
 
 The CSV/JSON files carry the same rows with stable recipe ids and the
 localized method names.

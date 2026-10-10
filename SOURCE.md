@@ -5,10 +5,10 @@ corpus on [icoffeeapp.com](https://icoffeeapp.com).
 
 | Field | Value |
 |---|---|
-| Corpus source hash | `08e16418d203acca96d19e33bf431c432d8607c95e2f530766f05e1379876733` |
-| Charts generated at | 2026-07-22T15:44:21.545Z |
-| Export run | 2026-07-23T18:40:01.710Z |
-| House recipes | 9 |
+| Corpus source hash | `c09addaf70f134ca48dadf70326c189ce0a6c1aee8a5a458066b92d622ce5d09` |
+| Charts generated at | 2026-09-28T21:32:49.008Z |
+| Export run | 2026-10-10T11:47:35.931Z |
+| House recipes | 11 |
 | Pipeline | `scripts/export-backlink-repo.mjs` |
 | Stats page | https://icoffeeapp.com/en/learn/coffee-statistics |
 
