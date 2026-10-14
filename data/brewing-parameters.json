@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-10T11:47:35.931Z",
-  "source_hash": "c09addaf70f134ca48dadf70326c189ce0a6c1aee8a5a458066b92d622ce5d09",
-  "recipe_count": 11,
+  "generated_at": "2026-10-14T18:56:58.385Z",
+  "source_hash": "27cb1e3492d29571aa9d500324e484fbf87b7f8e5ee1f342b9d60ac6b562924f",
+  "recipe_count": 12,
   "recipes": [
     {
       "canonical_id": "espresso-icoffee",
@@ -74,6 +74,15 @@
       "water_temp_c": 92,
       "coffee_dose_g": 60,
       "brew_water_ml": 960
+    },
+    {
+      "canonical_id": "clever-dripper-icoffee",
+      "method_en": "Clever Dripper",
+      "ratio": "1:16",
+      "water_parts": 16,
+      "water_temp_c": 95,
+      "coffee_dose_g": 30,
+      "brew_water_ml": 480
     },
     {
       "canonical_id": "japanese-iced-coffee-icoffee",
